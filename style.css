@@ -1,0 +1,768 @@
+/* Custom font face */
+@font-face {
+    font-family: 'Cursive1';
+    src: url('cursive1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Navfont2';
+    src: url('PlayfairDisplayRegular-ywLOY.ttf') format('truetype'); /* Correct format name */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the custom font to the navbar */
+.navbar {
+    font-family: 'Navfont2', sans-serif;
+}
+
+/* Apply the custom font to links within the navbar */
+.navbar-nav .nav-link {
+    font-family: 'Navfont2', sans-serif;
+}
+
+
+
+/* Apply pink color to all text and links in the navbar */
+.navbar, .navbar-nav .nav-link, .navbar-brand {
+    color: #ff69b4 !important; /* Hot pink color */
+    
+}
+
+/* Optional: Change the color of the navbar links on hover */
+.navbar-nav .nav-link:hover {
+    color: #ff1493 !important; /* Darker pink color on hover */
+}
+
+/* Optional: Ensure the background color remains consistent */
+.navbar-light {
+    background-color: #ffffff; /* White background for contrast */
+}
+/* Custom styles for the front page section */
+.front-page {
+    padding: 60px 0;
+    background-color: #ffffff; /* Light background color */
+}
+
+
+.front-page p {
+    font-size: 20pxrem;
+    color: #333; /* Dark text color */
+    line-height: 1.6;
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    max-width: 300px; /* Adjust the size as needed */
+    border: 5px solid #ff69b481; /* Pink border around the image */
+}
+/* Apply the custom font to headers */
+.front-page h1 {
+    font-family: 'Cursive1', cursive; /* Use the custom font and fall back to cursive */
+    font-size: 70px;
+    margin-bottom: 1.5rem;
+    color: #ff69b4;
+}
+
+/* Additional header styles to ensure consistency */
+h2, h3, h4, h5, h6 {
+    font-family: 'Cursive1', cursive; /* Apply custom font to other header levels if needed */
+}
+/* Navbar link styling */
+.nav-link {
+    position: relative; /* Ensure that the pseudo-element can be positioned relative to the link */
+    padding-bottom: 5px; /* Add space for the underline */
+}
+
+/* Pink underline on hover */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .6px; /* Thickness of the underline */
+    background-color: #ff69b44d; /* Hot pink color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; /* Animation effect */
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* Social Media Icons */
+.social-icons a {
+    font-size: 1.5rem; /* Adjust the size as needed */
+   
+}
+
+.text-pink {
+    color: #ff69b4;
+}
+
+.text-pink:hover {
+    color: #ff00ea6e; /* Slightly darker pink for hover effect */
+}
+.social-icons a {
+    text-decoration: none; /* Remove underline */
+}
+.front-page {
+    background-image: url('assets/sec1.png'); /* Replace with your image path */
+    background-size: cover; /* Adjusts image to cover the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    color: #fff; /* Optional: changes text color to white for better contrast */
+    padding: 100px 0; /* Optional: adds padding to the section */
+}
+/* Custom Navbar Background Image */
+/* Optional: Make sure the links are visible over the background */
+.navbar .nav-link {
+    color: #fff; /* Replace with your preferred link color for better visibility */
+}
+/* Custom Navbar Background */
+.navbar {
+    font-family: 'Navfont2', sans-serif;
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for 3D effect */
+    border-bottom: 1px solid #ddd; /* Optional: Adds a subtle border for more depth */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Navbar Brand Style */
+
+
+
+/* Optional: Customize the background image for the front-page section */
+.front-page {
+    background-image: url('assets/sec1.png'); /* Replace with your image path */
+    background-size: cover; /* Adjusts image to cover the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    color: #fff; /* Changes text color to white for better contrast */
+    padding: 50px 0; /* Adds padding to the section */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Adds an inner shadow for depth */
+}
+
+
+.front-page {
+    background-image: url('assets/sec1.png'); /* Replace with your image path */
+    background-size: cover; /* Adjust image size to cover the entire section */
+    background-position: center center; /* Center the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    color: #fff; /* Changes text color to white for better contrast */
+    padding: 100px 0; /* Adds padding to the section to ensure content isn't cut off */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Adds an inner shadow for depth */
+}
+
+/* Additional adjustments if necessary */
+.front-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/sec1.png'); /* Replace with your image path */
+    background-size: contain; /* Ensure the whole image is visible */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    z-index: -1; /* Place behind the content */
+    opacity: 0.7; /* Optional: Adjust opacity if needed */
+}
+/* Navbar Styles */
+.navbar {
+    font-family: 'Navfont2', sans-serif;
+    background-color: #ffffff; /* White background for contrast */
+    background-image: url('assets/navbar-background.jpg'); /* Background image for navbar */
+    background-size: cover; /* Adjusts image to cover the entire navbar */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    color: #fff; /* Ensures text is visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for 3D effect */
+    border-bottom: 1px solid #ddd; /* Subtle border for depth */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+
+/* Pink Underline on Hover */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .6px; /* Thickness of the underline */
+    background-color: #ffd2e8; /* Hot pink color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; /* Animation effect */
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Navba
+
+/* Additional Styling for Social Media Icons */
+.social-icons a {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: #ff69b4; /* Hot pink color */
+    transition: color 0.3s ease; /* Smooth color transition */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-icons a:hover {
+    color: #ff69b4;
+}
+/* Services Section Styles */
+.services {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.services .section-title {
+    text-align: center;
+    font-family: 'Cursive1', cursive;
+    font-size: 40px;
+    color: #ff69b4;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    position: relative;
+    overflow: hidden; /* Ensure that hidden content does not affect layout */
+    margin-bottom: 30px;
+}
+
+.service-content {
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.service-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-icon img {
+    max-width: 100px;
+    height: auto;
+}
+
+.service-title {
+    font-family: 'Navfont2', sans-serif;
+    font-size: 24px;
+    color: #ff69b4;
+    margin: 0;
+}
+
+.service-info {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding: 20px;
+    background: #fff; /* Background color for the hidden content */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px); /* Hide initially by moving up */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    z-index: 10; /* Ensure it appears above other content */
+}
+
+.service-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.service-item:hover .service-info {
+    opacity: 1; /* Show the hidden info on hover */
+    visibility: visible; /* Make it visible */
+    transform: translateY(0); /* Move the info to its position */
+}
+
+.service-item:hover .service-content {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .service-item {
+        margin-bottom: 20px;
+    }
+
+    .services .section-title {
+        font-size: 32px;
+    }
+
+    .service-icon img {
+        max-width: 80px;
+    }
+}
+/* Personal Story Section Styles */
+.personal-story {
+    padding: 60px 0;
+    background-color: #ffffff; /* Light background color for contrast */
+    text-align: center;
+}
+
+.personal-story .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-title {
+    font-family: 'Cursive1', cursive;
+    font-size: 70px;
+    color: #ff69b4;/* Hot pink color for the title */
+    margin-bottom: 20px;
+}
+
+.story-text {
+    font-family: 'Navfont2', sans-serif;
+    font-size: 18px;
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6;
+    margin: 0 auto;
+ 
+    max-width: 700px;
+}
+
+@media (max-width: 767px) {
+    .story-title {
+        font-size: 28px;
+    }
+
+    .story-text {
+        font-size: 16px;
+    }
+}
+/* Personal Story Section Background Image */
+.personal-story {
+    
+    padding: 60px 0;
+    background-image: url('assets/flowrs.png'); /* Background image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    padding: 40px 0;
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    font-size:39px;
+    font-weight: bold;
+}
+
+.contact-list, .footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li, .footer-links li {
+    margin-bottom: 10px;
+}
+
+.contact-list li i, .footer-links li a {
+    margin-right: 10px;
+}
+
+.contact-list li a, .footer-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-list li a:hover, .footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #ff007f; /* Pink text color */
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffaad5; /* Pink text color */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444; /* Subtle border for separation */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+.footer {
+    background-color: #200b0b63; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    padding: 40px 0;
+    background-image: url('assets/artttt.png'); /* Replace with your image path */
+    background-size: cover; /* Adjusts image to cover the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+}
+/* Custom font face */
+@font-face {
+    font-family: 'Cursive1';
+    src: url('cursive1.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Navfont2';
+    src: url('PlayfairDisplayRegular-ywLOY.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the custom font to the navbar */
+.navbar {
+    font-family: 'Navfont2', sans-serif;
+}
+
+/* Apply the custom font to links within the navbar */
+.navbar-nav .nav-link {
+    font-family: 'Navfont2', sans-serif;
+}
+
+/* Apply pink color to all text and links in the navbar */
+.navbar, .navbar-nav .nav-link, .navbar-brand {
+    color: #ff007f; /* Pink text color */
+}
+
+/* Optional: Change the color of the navbar links on hover */
+.navbar-nav .nav-link:hover {
+    color: #ff007f; /* Pink text color */
+}
+
+/* Optional: Ensure the background color remains consistent */
+.navbar-light {
+    background-color: #ffffff; /* White background for contrast */
+}
+
+/* Header Section Styles */
+.treatments-header {
+    padding: 30px 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.treatments-header img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10%;
+    border: 5px solid #ff69b481; /* Pink border around the image */
+    margin-right: 30px;
+}
+
+.treatments-info {
+    max-width: 800px;
+}
+
+.treatments-info h1 {
+    font-family: 'Cursive1', cursive;
+    font-size: 60px;
+    color: #ff007f; /* Pink text color */
+    margin-bottom: 30px;
+}
+
+.treatment-item {
+    margin-bottom: 30px;
+}
+
+.treatment-item h2 {
+    font-family: 'Cursive1', cursive;
+    font-size: 36px;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.treatment-item p {
+    font-family: 'Navfont2', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .treatments-header {
+        flex-direction: column;
+    }
+
+    .treatments-header img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .treatments-info h1 {
+        font-size: 32px;
+    }
+
+    .treatment-item h2 {
+        font-size: 28px;
+    }
+
+    .treatment-item p {
+        font-size: 16px;
+    }
+}
+
+
+/* Additional navbar styles, social icons, footer, and other sections... */
+/* Custom styles for the accordion */
+.card {
+    border: none; /* Removes the border around the card */
+    margin-bottom: 10px; /* Adds spacing between cards */
+    overflow: hidden; /* Ensures content is clipped within card boundaries */
+}
+
+.card-header {
+    background-color: #ffffff; /* White background for headers */
+    border: 1px solid #e5e5e5; /* Light grey border for headers */
+    border-radius: 0.25rem; /* Rounded corners for headers */
+    cursor: pointer; /* Indicates clickable items */
+}
+
+.card-header .btn-link {
+    font-size: 1.25rem; /* Increases font size */
+    color: #ff008098; /* Pink text color */
+    text-decoration: none; /* Removes underline from text */
+    font-weight: bold; /* Makes text bold */
+    display: block; /* Makes button block level */
+    width: 100%; /* Ensures button takes full width */
+    text-align: left; /* Aligns text to the left */
+    padding: 1rem; /* Adds padding inside the header */
+}
+
+.card-header:hover .btn-link {
+    background-color: #f8f9fa; /* Light grey background on hover */
+}
+
+.card-body {
+    background-color: #ffffff; /* White background for the body */
+    color: #333333; /* Darker text color for readability */
+    padding: 1rem; /* Adds padding inside the body */
+    font-size: 1.125rem; /* Increases font size for better readability */
+    display: none; /* Initially hides the content */
+}
+
+.treatment-card:hover .card-body {
+    display: block; /* Shows content on hover */
+}
+
+.treatment-header:hover .card-body {
+    display: block; /* Ensures content shows when hovering over header */
+}
+
+/* For responsiveness, ensure the image stays on the left */
+.col-lg-6.text-center {
+    text-align: center; /* Centers text for smaller screens */
+}
+
+h1 {
+    font-size: 2.5rem; /* Increases the font size of the main heading */
+    margin-bottom: 20px; /* Adds space below the heading */
+}/* Ensure proper layout of the front-page section */
+.front-page {
+    margin-bottom: 30px;
+}
+
+/* Style for the circular image container */
+.col-lg-6.text-center {
+    display: flex; /* Flexbox for aligning items */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+}
+
+/* Style for the circular image itself */
+img.img-fluid.rounded-circle {
+    max-height: 300px; /* Adjust the max height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Accordion card styles */
+.card {
+    border: none; /* Removes border */
+    margin-bottom: 10px; /* Spacing between cards */
+}
+
+.card-header {
+    background-color: #f700ff15; /* White background */
+    border: 1px solid #e5e5e5; /* Light grey border */
+    border-radius: 0.25rem; /* Rounded corners */
+    cursor: pointer; /* Indicates clickable items */
+}
+
+.card-header .btn-link {
+    font-size: 1.25rem; /* Font size */
+    color: #ff007f; /* Pink text color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    display: block; /* Full width */
+    width: 100%; /* Full width */
+    text-align: left; /* Align text to left */
+    padding: 1rem; /* Padding inside the header */
+}
+
+.card-header:hover .btn-link {
+    background-color: #f8f9fa; /* Light grey background on hover */
+}
+
+.card-body {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Darker text color */
+    padding: 1rem; /* Padding inside body */
+    font-size: 1.125rem; /* Font size */
+    display: none; /* Hidden initially */
+}
+
+.treatment-card:hover .card-body,
+.treatment-header:hover .card-body {
+    display: block; /* Show on hover */
+}
+
+/* Ensure text alignment and size */
+h1 {
+    font-size: 2.5rem; /* Increase font size */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .col-lg-6.text-center {
+        text-align: center; /* Center text for smaller screens */
+    }
+}
+/* Ensure proper layout of the front-page section */
+.front-page {
+    position: relative; /* Ensures absolute positioning within this section works */
+    margin-bottom: 30px;
+    background-image: url('assets/sec1.png'); /* Replace with your image path */
+    background-size: cover; /* Adjust image size to cover the entire section */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    color: #fff; /* Changes text color to white for better contrast */
+    padding: 100px 0; /* Adds padding to the section */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* Adds an inner shadow for depth */
+}
+
+/* Style for the circular image container */
+.col-lg-6.text-center {
+    display: flex; /* Flexbox for aligning items */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    text-align: center; /* Center text within the container */
+}
+
+/* Style for the circular image itself */
+img.img-fluid.rounded-circle {
+    max-height: 300px; /* Adjust the max height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+/* Accordion card styles */
+.card {
+    border: none; /* Removes border */
+    margin-bottom: 10px; /* Spacing between cards */
+    overflow: hidden; /* Ensures content is clipped within card boundaries */
+}
+
+.card-header {
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e5e5e5; /* Light grey border */
+    border-radius: 0.25rem; /* Rounded corners */
+    cursor: pointer; /* Indicates clickable items */
+}
+
+.card-header .btn-link {
+    font-size: 1.25rem; /* Font size */
+    color: #ff007f; /* Pink text color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    display: block; /* Full width */
+    width: 100%; /* Full width */
+    text-align: left; /* Align text to left */
+    padding: 1rem; /* Padding inside the header */
+}
+
+.card-header:hover .btn-link {
+    background-color: #f8f9fa; /* Light grey background on hover */
+}
+
+.card-body {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Darker text color */
+    padding: 1rem; /* Padding inside body */
+    font-size: 1.125rem; /* Font size */
+    display: none; /* Hidden initially */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.card-header:hover + .card-body {
+    display: block; /* Show on hover */
+}
+
+/* Ensure text alignment and size */
+h1 {
+    font-size: 2.5rem; /* Increase font size */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .col-lg-6.text-center {
+        text-align: center; /* Center text for smaller screens */
+    }
+}
+/* Adjust the logo size */
+.logo {
+    max-height: 100px; /* Adjust as needed */
+    padding-left: 20px; /* Adjust as needed */
+}
+
+/* Center the navbar items */
+.navbar-nav {
+    flex-direction: row;
+}
+
+/* Adjust the navbar size */
+.navbar {
+    padding: 0.5rem 1rem; /* Adjust as needed */
+}
+
+/* Make the navbar text smaller */
+.nav-link {
+    font-size: 15px; /* Adjust as needed */
+}
+
+/* Adjust social icons size */
+.social-icons i {
+    font-size: 1rem; /* Adjust as needed */
+}

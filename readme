@@ -1,0 +1,53 @@
+User Story for Botox Website
+Title: Website Development for Ageless Beauty Aesthetics
+
+As a potential client of Ageless Beauty Aesthetics,
+
+I want to explore a well-designed, informative, and easy-to-navigate website,
+
+So that I can learn about the services offered, view the clinic's location, get in touch, and schedule appointments with ease.
+
+Acceptance Criteria
+Homepage:
+
+Header: Includes a logo on the top left, navigation bar with links to Home, About Us, Services, Vitamin Injections, IV Infusions, Book Appointment, and Contact.
+Color Scheme: The design reflects the classy med spa look with colors matching the logo and business card.
+Social Media Links: A prominent link or icon that directs users to all social media platforms.
+Contact Information: Display the phone number (575) 528-8036 and address 14071 Pebble Hills Blvd, Ste 4, El Paso, TX 79938 with a note mentioning Spanish-speaking services.
+About Us Page:
+
+Content: Includes a section with your picture and title, followed by the description:
+At Ageless Beauty Aesthetics, we believe in enhancing natural beauty, preserving youth, and boosting confidence through safe and effective treatments. Our goal is to create a comfortable and welcoming environment for our clients, where they can feel confident in our care. We are dedicated to staying up-to-date on the latest techniques and advancements in medical aesthetics to ensure that our clients receive the best possible care. At Ageless Beauty Aesthetics, we strive to build long-lasting relationships with our clients based on trust, integrity, and exceptional results. Our mission is to help our clients look and feel their best, empowering them to embrace their beauty and feel confident in their own skin.
+
+Personal Story: Explanation of the inspiration behind starting the business:
+I was inspired to start my Botox fillers, weight loss injections, hydration, and vitamin injection business because I wanted to help people feel better in their own skin. I believe that enhancing natural beauty should be accessible to everyone, not just those who have the financial means to afford expensive treatments. By offering these services at a reasonable cost, I hope to make a positive impact on the lives of my clients and help them feel more confident and comfortable in their own bodies.
+
+About Me: Profile of Adriana Kuti, including qualifications and mission.
+Services Page:
+
+Service List: Overview of all services offered with clickable links for detailed descriptions.
+Service Details: Each service has its own page detailing what the service is and its benefits.
+Updated Services: Include new and existing services with descriptions and benefits.
+Vitamin Injections Page:
+
+List of Injections: All vitamin injections provided with descriptions and benefits.
+IV Infusions Page:
+
+List of Infusions: All IV infusions available with descriptions and benefits.
+Booking Page:
+
+Appointment Scheduling: Users can select a date and time to book an appointment.
+Integration: Ensure the booking system is user-friendly and integrates with your current setup.
+Payments Page:
+
+Payment Integration: Ability to process payments through Square Business Account.
+Before and After Pages:
+
+Botox: Page showcasing before and after images of Botox treatments.
+Lip Fillers: Page showcasing before and after images of lip filler treatments.
+Gallery: A comprehensive picture gallery featuring all before and after images.
+Contact Page:
+
+Location Information: Address and a map.
+Contact Form: For inquiries.
+Additional Information: Include phone number and note about Spanish-speaking services.
